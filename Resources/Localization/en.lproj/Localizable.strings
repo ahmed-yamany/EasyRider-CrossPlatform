@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  EasyRider-CrossPlatform
+
+  Created by Ahmed Yamany on 12/06/2024.
+  
+*/
+
+"hello" = "Hello";
+"login.title" = "Welcome Back";
+

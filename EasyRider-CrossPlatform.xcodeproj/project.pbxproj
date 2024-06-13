@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE4ABD092C19CFB800F3431D /* EasyRiderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ABD082C19CFB800F3431D /* EasyRiderApp.swift */; };
+		EE4ABD0B2C19CFB800F3431D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ABD0A2C19CFB800F3431D /* ContentView.swift */; };
+		EE4ABD0D2C19CFB900F3431D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD0C2C19CFB900F3431D /* Assets.xcassets */; };
+		EE4ABD112C19CFB900F3431D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD102C19CFB900F3431D /* Preview Assets.xcassets */; };
+		EE4ABD1E2C19DCFA00F3431D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD1D2C19DCFA00F3431D /* Colors.xcassets */; };
+		EE4ABD242C19DF0200F3431D /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD1F2C19DF0200F3431D /* Poppins-Regular.ttf */; };
+		EE4ABD252C19DF0200F3431D /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD202C19DF0200F3431D /* Poppins-SemiBold.ttf */; };
+		EE4ABD272C19DF0200F3431D /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD222C19DF0200F3431D /* Poppins-Medium.ttf */; };
+		EE4ABD282C19DF0200F3431D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD232C19DF0200F3431D /* Poppins-Bold.ttf */; };
+		EE4ABD2B2C19E08E00F3431D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD292C19E08E00F3431D /* .swiftlint.yml */; };
+		EE4ABD2C2C19E08E00F3431D /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD2A2C19E08E00F3431D /* swiftgen.yml */; };
+		EE4ABD312C19E0EA00F3431D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD2F2C19E0EA00F3431D /* Localizable.strings */; };
+		EE4ABD352C19E22700F3431D /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ABD342C19E22700F3431D /* Strings+Generated.swift */; };
+		EEAA70552C1B98E300CA564D /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70542C1B98E300CA564D /* AppSettings.swift */; };
+		EEAA70572C1B99B000CA564D /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70562C1B99AF00CA564D /* Language.swift */; };
+		EEAA70592C1B99D900CA564D /* Environment+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70582C1B99D900CA564D /* Environment+Language.swift */; };
+		EEAA705B2C1B9A2B00CA564D /* swiftgen+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA705A2C1B9A2B00CA564D /* swiftgen+localized.swift */; };
+		EEAA705E2C1BB15B00CA564D /* FoundationExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = EEAA705D2C1BB15B00CA564D /* FoundationExtensions */; };
+		EEAA70612C1BB6EE00CA564D /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70602C1BB6ED00CA564D /* Fonts+Generated.swift */; };
+		EEAA70662C1BB8AD00CA564D /* Files+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70652C1BB8AD00CA564D /* Files+Generated.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE4ABD052C19CFB800F3431D /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4ABD082C19CFB800F3431D /* EasyRiderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRiderApp.swift; sourceTree = "<group>"; };
+		EE4ABD0A2C19CFB800F3431D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE4ABD0C2C19CFB900F3431D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE4ABD0E2C19CFB900F3431D /* EasyRider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyRider.entitlements; sourceTree = "<group>"; };
+		EE4ABD102C19CFB900F3431D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE4ABD172C19D5EC00F3431D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EE4ABD1D2C19DCFA00F3431D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		EE4ABD1F2C19DF0200F3431D /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		EE4ABD202C19DF0200F3431D /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		EE4ABD222C19DF0200F3431D /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		EE4ABD232C19DF0200F3431D /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		EE4ABD292C19E08E00F3431D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		EE4ABD2A2C19E08E00F3431D /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		EE4ABD302C19E0EA00F3431D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EE4ABD342C19E22700F3431D /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		EE4ABD362C19E5BD00F3431D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EEAA70542C1B98E300CA564D /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		EEAA70562C1B99AF00CA564D /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		EEAA70582C1B99D900CA564D /* Environment+Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+Language.swift"; sourceTree = "<group>"; };
+		EEAA705A2C1B9A2B00CA564D /* swiftgen+localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swiftgen+localized.swift"; sourceTree = "<group>"; };
+		EEAA70602C1BB6ED00CA564D /* Fonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
+		EEAA70652C1BB8AD00CA564D /* Files+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Files+Generated.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE4ABD022C19CFB800F3431D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEAA705E2C1BB15B00CA564D /* FoundationExtensions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE4ABCFC2C19CFB700F3431D = {
+			isa = PBXGroup;
+			children = (
+				EE4ABD292C19E08E00F3431D /* .swiftlint.yml */,
+				EE4ABD2A2C19E08E00F3431D /* swiftgen.yml */,
+				EE4ABD072C19CFB800F3431D /* EasyRider */,
+				EE4ABD182C19DC1300F3431D /* Utilities */,
+				EE4ABD192C19DC4100F3431D /* Resources */,
+				EE4ABD062C19CFB800F3431D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE4ABD062C19CFB800F3431D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE4ABD052C19CFB800F3431D /* EasyRider.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE4ABD072C19CFB800F3431D /* EasyRider */ = {
+			isa = PBXGroup;
+			children = (
+				EEAA70532C1B98AA00CA564D /* Settings */,
+				EEAA70522C1B94A500CA564D /* Scenes */,
+				EE4ABD172C19D5EC00F3431D /* Info.plist */,
+				EE4ABD082C19CFB800F3431D /* EasyRiderApp.swift */,
+				EE4ABD0A2C19CFB800F3431D /* ContentView.swift */,
+				EE4ABD0E2C19CFB900F3431D /* EasyRider.entitlements */,
+				EE4ABD0F2C19CFB900F3431D /* Preview Content */,
+			);
+			path = EasyRider;
+			sourceTree = "<group>";
+		};
+		EE4ABD0F2C19CFB900F3431D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE4ABD102C19CFB900F3431D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE4ABD182C19DC1300F3431D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EE4ABD192C19DC4100F3431D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE4ABD1A2C19DC5B00F3431D /* Assets */,
+				EE4ABD1C2C19DC6200F3431D /* Localization */,
+				EE4ABD1B2C19DC5F00F3431D /* Fonts */,
+				EEAA70622C1BB7C300CA564D /* Files */,
+				EE4ABD332C19E0F500F3431D /* Generated */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE4ABD1A2C19DC5B00F3431D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EE4ABD0C2C19CFB900F3431D /* Assets.xcassets */,
+				EE4ABD1D2C19DCFA00F3431D /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EE4ABD1B2C19DC5F00F3431D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EEAA705F2C1BB55600CA564D /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EE4ABD1C2C19DC6200F3431D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				EEAA70562C1B99AF00CA564D /* Language.swift */,
+				EEAA70582C1B99D900CA564D /* Environment+Language.swift */,
+				EEAA705A2C1B9A2B00CA564D /* swiftgen+localized.swift */,
+				EE4ABD2F2C19E0EA00F3431D /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		EE4ABD332C19E0F500F3431D /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				EEAA70652C1BB8AD00CA564D /* Files+Generated.swift */,
+				EEAA70602C1BB6ED00CA564D /* Fonts+Generated.swift */,
+				EE4ABD342C19E22700F3431D /* Strings+Generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		EEAA70522C1B94A500CA564D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EEAA70532C1B98AA00CA564D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EEAA70542C1B98E300CA564D /* AppSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EEAA705F2C1BB55600CA564D /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				EE4ABD232C19DF0200F3431D /* Poppins-Bold.ttf */,
+				EE4ABD222C19DF0200F3431D /* Poppins-Medium.ttf */,
+				EE4ABD1F2C19DF0200F3431D /* Poppins-Regular.ttf */,
+				EE4ABD202C19DF0200F3431D /* Poppins-SemiBold.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		EEAA70622C1BB7C300CA564D /* Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE4ABD042C19CFB800F3431D /* EasyRider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE4ABD142C19CFB900F3431D /* Build configuration list for PBXNativeTarget "EasyRider" */;
+			buildPhases = (
+				EE4ABD2E2C19E0BD00F3431D /* swiftgen */,
+				EE4ABD012C19CFB800F3431D /* Sources */,
+				EE4ABD022C19CFB800F3431D /* Frameworks */,
+				EE4ABD032C19CFB800F3431D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyRider;
+			packageProductDependencies = (
+				EEAA705D2C1BB15B00CA564D /* FoundationExtensions */,
+			);
+			productName = "EasyRider-CrossPlatform";
+			productReference = EE4ABD052C19CFB800F3431D /* EasyRider.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE4ABCFD2C19CFB700F3431D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					EE4ABD042C19CFB800F3431D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = EE4ABD002C19CFB700F3431D /* Build configuration list for PBXProject "EasyRider-CrossPlatform" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+			);
+			mainGroup = EE4ABCFC2C19CFB700F3431D;
+			packageReferences = (
+				EEAA705C2C1BB15B00CA564D /* XCRemoteSwiftPackageReference "FoundationExtensions" */,
+			);
+			productRefGroup = EE4ABD062C19CFB800F3431D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE4ABD042C19CFB800F3431D /* EasyRider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE4ABD032C19CFB800F3431D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4ABD2B2C19E08E00F3431D /* .swiftlint.yml in Resources */,
+				EE4ABD252C19DF0200F3431D /* Poppins-SemiBold.ttf in Resources */,
+				EE4ABD1E2C19DCFA00F3431D /* Colors.xcassets in Resources */,
+				EE4ABD282C19DF0200F3431D /* Poppins-Bold.ttf in Resources */,
+				EE4ABD112C19CFB900F3431D /* Preview Assets.xcassets in Resources */,
+				EE4ABD312C19E0EA00F3431D /* Localizable.strings in Resources */,
+				EE4ABD272C19DF0200F3431D /* Poppins-Medium.ttf in Resources */,
+				EE4ABD0D2C19CFB900F3431D /* Assets.xcassets in Resources */,
+				EE4ABD242C19DF0200F3431D /* Poppins-Regular.ttf in Resources */,
+				EE4ABD2C2C19E08E00F3431D /* swiftgen.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE4ABD2E2C19E0BD00F3431D /* swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"swiftgen not installed\"\nfi \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE4ABD012C19CFB800F3431D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEAA70662C1BB8AD00CA564D /* Files+Generated.swift in Sources */,
+				EEAA70612C1BB6EE00CA564D /* Fonts+Generated.swift in Sources */,
+				EE4ABD0B2C19CFB800F3431D /* ContentView.swift in Sources */,
+				EE4ABD352C19E22700F3431D /* Strings+Generated.swift in Sources */,
+				EEAA70572C1B99B000CA564D /* Language.swift in Sources */,
+				EEAA705B2C1B9A2B00CA564D /* swiftgen+localized.swift in Sources */,
+				EEAA70552C1B98E300CA564D /* AppSettings.swift in Sources */,
+				EEAA70592C1B99D900CA564D /* Environment+Language.swift in Sources */,
+				EE4ABD092C19CFB800F3431D /* EasyRiderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE4ABD2F2C19E0EA00F3431D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE4ABD302C19E0EA00F3431D /* en */,
+				EE4ABD362C19E5BD00F3431D /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE4ABD122C19CFB900F3431D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE4ABD132C19CFB900F3431D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EE4ABD152C19CFB900F3431D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EasyRider/EasyRider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EasyRider/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HYH2BS9LT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EasyRider/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yamany.EasyRider-CrossPlatform";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE4ABD162C19CFB900F3431D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EasyRider/EasyRider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EasyRider/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HYH2BS9LT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EasyRider/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yamany.EasyRider-CrossPlatform";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE4ABD002C19CFB700F3431D /* Build configuration list for PBXProject "EasyRider-CrossPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4ABD122C19CFB900F3431D /* Debug */,
+				EE4ABD132C19CFB900F3431D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE4ABD142C19CFB900F3431D /* Build configuration list for PBXNativeTarget "EasyRider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4ABD152C19CFB900F3431D /* Debug */,
+				EE4ABD162C19CFB900F3431D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EEAA705C2C1BB15B00CA564D /* XCRemoteSwiftPackageReference "FoundationExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ahmed-yamany/FoundationExtensions";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EEAA705D2C1BB15B00CA564D /* FoundationExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEAA705C2C1BB15B00CA564D /* XCRemoteSwiftPackageReference "FoundationExtensions" */;
+			productName = FoundationExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EE4ABCFD2C19CFB700F3431D /* Project object */;
+}
