@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0A46C32C20FB0B004103BD /* Settings in Resources */ = {isa = PBXBuildFile; fileRef = EE0A46C12C20FB0B004103BD /* Settings */; };
+		EE0A46C52C20FB2B004103BD /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = EE0A46C42C20FB2B004103BD /* Settings */; };
+		EE3CAA1E2C20FD320005867B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA1A2C20FD320005867B /* OnboardingView.swift */; };
+		EE3CAA1F2C20FD320005867B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA1B2C20FD320005867B /* OnboardingViewModel.swift */; };
+		EE3CAA232C20FD380005867B /* OnboardingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA222C20FD380005867B /* OnboardingUseCase.swift */; };
+		EE3CAA282C2113910005867B /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA272C2113910005867B /* OnboardingCoordinator.swift */; };
+		EE3CAA2A2C2115660005867B /* ERCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA292C2115660005867B /* ERCoordinator.swift */; };
 		EE4ABD092C19CFB800F3431D /* EasyRiderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ABD082C19CFB800F3431D /* EasyRiderApp.swift */; };
-		EE4ABD0B2C19CFB800F3431D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ABD0A2C19CFB800F3431D /* ContentView.swift */; };
 		EE4ABD0D2C19CFB900F3431D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD0C2C19CFB900F3431D /* Assets.xcassets */; };
 		EE4ABD112C19CFB900F3431D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD102C19CFB900F3431D /* Preview Assets.xcassets */; };
 		EE4ABD1E2C19DCFA00F3431D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD1D2C19DCFA00F3431D /* Colors.xcassets */; };
@@ -20,9 +26,6 @@
 		EE4ABD2C2C19E08E00F3431D /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD2A2C19E08E00F3431D /* swiftgen.yml */; };
 		EE4ABD312C19E0EA00F3431D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD2F2C19E0EA00F3431D /* Localizable.strings */; };
 		EE4ABD352C19E22700F3431D /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ABD342C19E22700F3431D /* Strings+Generated.swift */; };
-		EEAA70552C1B98E300CA564D /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70542C1B98E300CA564D /* AppSettings.swift */; };
-		EEAA70572C1B99B000CA564D /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70562C1B99AF00CA564D /* Language.swift */; };
-		EEAA70592C1B99D900CA564D /* Environment+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70582C1B99D900CA564D /* Environment+Language.swift */; };
 		EEAA705B2C1B9A2B00CA564D /* swiftgen+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA705A2C1B9A2B00CA564D /* swiftgen+localized.swift */; };
 		EEAA705E2C1BB15B00CA564D /* FoundationExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = EEAA705D2C1BB15B00CA564D /* FoundationExtensions */; };
 		EEAA70612C1BB6EE00CA564D /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70602C1BB6ED00CA564D /* Fonts+Generated.swift */; };
@@ -30,9 +33,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE0A46C12C20FB0B004103BD /* Settings */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Settings; sourceTree = "<group>"; };
+		EE3CAA1A2C20FD320005867B /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		EE3CAA1B2C20FD320005867B /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		EE3CAA222C20FD380005867B /* OnboardingUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingUseCase.swift; sourceTree = "<group>"; };
+		EE3CAA272C2113910005867B /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		EE3CAA292C2115660005867B /* ERCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCoordinator.swift; sourceTree = "<group>"; };
 		EE4ABD052C19CFB800F3431D /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4ABD082C19CFB800F3431D /* EasyRiderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRiderApp.swift; sourceTree = "<group>"; };
-		EE4ABD0A2C19CFB800F3431D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE4ABD0C2C19CFB900F3431D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE4ABD0E2C19CFB900F3431D /* EasyRider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyRider.entitlements; sourceTree = "<group>"; };
 		EE4ABD102C19CFB900F3431D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -46,13 +54,10 @@
 		EE4ABD2A2C19E08E00F3431D /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		EE4ABD302C19E0EA00F3431D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EE4ABD342C19E22700F3431D /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
-		EE4ABD362C19E5BD00F3431D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EEAA70542C1B98E300CA564D /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
-		EEAA70562C1B99AF00CA564D /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
-		EEAA70582C1B99D900CA564D /* Environment+Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+Language.swift"; sourceTree = "<group>"; };
 		EEAA705A2C1B9A2B00CA564D /* swiftgen+localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swiftgen+localized.swift"; sourceTree = "<group>"; };
 		EEAA70602C1BB6ED00CA564D /* Fonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
 		EEAA70652C1BB8AD00CA564D /* Files+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Files+Generated.swift"; sourceTree = "<group>"; };
+		EEAA706E2C20F38B00CA564D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,21 +66,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEAA705E2C1BB15B00CA564D /* FoundationExtensions in Frameworks */,
+				EE0A46C52C20FB2B004103BD /* Settings in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE0A46C22C20FB0B004103BD /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A46C12C20FB0B004103BD /* Settings */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		EE3CAA182C20FD240005867B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CAA1A2C20FD320005867B /* OnboardingView.swift */,
+				EE3CAA1B2C20FD320005867B /* OnboardingViewModel.swift */,
+				EE3CAA272C2113910005867B /* OnboardingCoordinator.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EE3CAA192C20FD2A0005867B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CAA222C20FD380005867B /* OnboardingUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		EE4ABCFC2C19CFB700F3431D = {
 			isa = PBXGroup;
 			children = (
 				EE4ABD292C19E08E00F3431D /* .swiftlint.yml */,
 				EE4ABD2A2C19E08E00F3431D /* swiftgen.yml */,
+				EE0A46C22C20FB0B004103BD /* Packages */,
 				EE4ABD072C19CFB800F3431D /* EasyRider */,
 				EE4ABD182C19DC1300F3431D /* Utilities */,
 				EE4ABD192C19DC4100F3431D /* Resources */,
 				EE4ABD062C19CFB800F3431D /* Products */,
+				EEAA70722C20F65300CA564D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,11 +124,10 @@
 		EE4ABD072C19CFB800F3431D /* EasyRider */ = {
 			isa = PBXGroup;
 			children = (
-				EEAA70532C1B98AA00CA564D /* Settings */,
 				EEAA70522C1B94A500CA564D /* Scenes */,
-				EE4ABD172C19D5EC00F3431D /* Info.plist */,
+				EE3CAA292C2115660005867B /* ERCoordinator.swift */,
 				EE4ABD082C19CFB800F3431D /* EasyRiderApp.swift */,
-				EE4ABD0A2C19CFB800F3431D /* ContentView.swift */,
+				EE4ABD172C19D5EC00F3431D /* Info.plist */,
 				EE4ABD0E2C19CFB900F3431D /* EasyRider.entitlements */,
 				EE4ABD0F2C19CFB900F3431D /* Preview Content */,
 			);
@@ -148,8 +181,6 @@
 		EE4ABD1C2C19DC6200F3431D /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				EEAA70562C1B99AF00CA564D /* Language.swift */,
-				EEAA70582C1B99D900CA564D /* Environment+Language.swift */,
 				EEAA705A2C1B9A2B00CA564D /* swiftgen+localized.swift */,
 				EE4ABD2F2C19E0EA00F3431D /* Localizable.strings */,
 			);
@@ -169,16 +200,9 @@
 		EEAA70522C1B94A500CA564D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EEAA70682C1BC7FE00CA564D /* Onboarding */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		EEAA70532C1B98AA00CA564D /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				EEAA70542C1B98E300CA564D /* AppSettings.swift */,
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		EEAA705F2C1BB55600CA564D /* Poppins */ = {
@@ -199,6 +223,22 @@
 			path = Files;
 			sourceTree = "<group>";
 		};
+		EEAA70682C1BC7FE00CA564D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CAA192C20FD2A0005867B /* Domain */,
+				EE3CAA182C20FD240005867B /* Presentation */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EEAA70722C20F65300CA564D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,6 +247,7 @@
 			buildConfigurationList = EE4ABD142C19CFB900F3431D /* Build configuration list for PBXNativeTarget "EasyRider" */;
 			buildPhases = (
 				EE4ABD2E2C19E0BD00F3431D /* swiftgen */,
+				EEAA70672C1BBBC300CA564D /* swiftlint */,
 				EE4ABD012C19CFB800F3431D /* Sources */,
 				EE4ABD022C19CFB800F3431D /* Frameworks */,
 				EE4ABD032C19CFB800F3431D /* Resources */,
@@ -218,6 +259,7 @@
 			name = EasyRider;
 			packageProductDependencies = (
 				EEAA705D2C1BB15B00CA564D /* FoundationExtensions */,
+				EE0A46C42C20FB2B004103BD /* Settings */,
 			);
 			productName = "EasyRider-CrossPlatform";
 			productReference = EE4ABD052C19CFB800F3431D /* EasyRider.app */;
@@ -271,6 +313,7 @@
 				EE4ABD282C19DF0200F3431D /* Poppins-Bold.ttf in Resources */,
 				EE4ABD112C19CFB900F3431D /* Preview Assets.xcassets in Resources */,
 				EE4ABD312C19E0EA00F3431D /* Localizable.strings in Resources */,
+				EE0A46C32C20FB0B004103BD /* Settings in Resources */,
 				EE4ABD272C19DF0200F3431D /* Poppins-Medium.ttf in Resources */,
 				EE4ABD0D2C19CFB900F3431D /* Assets.xcassets in Resources */,
 				EE4ABD242C19DF0200F3431D /* Poppins-Regular.ttf in Resources */,
@@ -300,6 +343,25 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"swiftgen not installed\"\nfi \n";
 		};
+		EEAA70672C1BBBC300CA564D /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi \n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -307,15 +369,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3CAA232C20FD380005867B /* OnboardingUseCase.swift in Sources */,
 				EEAA70662C1BB8AD00CA564D /* Files+Generated.swift in Sources */,
 				EEAA70612C1BB6EE00CA564D /* Fonts+Generated.swift in Sources */,
-				EE4ABD0B2C19CFB800F3431D /* ContentView.swift in Sources */,
+				EE3CAA2A2C2115660005867B /* ERCoordinator.swift in Sources */,
+				EE3CAA1F2C20FD320005867B /* OnboardingViewModel.swift in Sources */,
 				EE4ABD352C19E22700F3431D /* Strings+Generated.swift in Sources */,
-				EEAA70572C1B99B000CA564D /* Language.swift in Sources */,
 				EEAA705B2C1B9A2B00CA564D /* swiftgen+localized.swift in Sources */,
-				EEAA70552C1B98E300CA564D /* AppSettings.swift in Sources */,
-				EEAA70592C1B99D900CA564D /* Environment+Language.swift in Sources */,
 				EE4ABD092C19CFB800F3431D /* EasyRiderApp.swift in Sources */,
+				EE3CAA1E2C20FD320005867B /* OnboardingView.swift in Sources */,
+				EE3CAA282C2113910005867B /* OnboardingCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +389,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EE4ABD302C19E0EA00F3431D /* en */,
-				EE4ABD362C19E5BD00F3431D /* ar */,
+				EEAA706E2C20F38B00CA564D /* ar */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -567,6 +630,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EE0A46C42C20FB2B004103BD /* Settings */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Settings;
+		};
 		EEAA705D2C1BB15B00CA564D /* FoundationExtensions */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EEAA705C2C1BB15B00CA564D /* XCRemoteSwiftPackageReference "FoundationExtensions" */;

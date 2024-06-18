@@ -6,11 +6,8 @@
 //
 
 import Foundation
+import Settings
 
 func localized(forKey key: String, table: String, fallbackValue value: String) -> String {
-    guard let path = Bundle.main.path(forResource: AppSettings.shared.language.rawValue, ofType: "lproj"),
-          let bundle = Bundle(path: path) else {
-        return value
-    }
-    return bundle.localizedString(forKey: key, value: value, table: table)
+    swiftgen_localized(forKey: key, table: table, fallbackValue: value)
 }
