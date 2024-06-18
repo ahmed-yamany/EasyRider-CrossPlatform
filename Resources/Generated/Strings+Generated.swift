@@ -14,11 +14,7 @@ internal enum L10n {
   ///   EasyRider-CrossPlatform
   /// 
   ///   Created by Ahmed Yamany on 12/06/2024.
-  internal static var hello: String { return L10n.tr("Localizable", "hello", fallback: "Hello") }
-  internal enum Login {
-    /// Welcome Back
-    internal static var title: String { return L10n.tr("Localizable", "login.title", fallback: "Welcome Back") }
-  }
+  internal static var skip: String { return L10n.tr("Localizable", "skip", fallback: "Skip") }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

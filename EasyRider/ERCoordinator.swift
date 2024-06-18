@@ -6,17 +6,27 @@
 //
 
 import SwiftUI
+import Routing
 
 struct ERCoordinator: View {
+    @EnvironmentObject private var router: Router<Routers>
     
     var body: some View {
-        NavigationStack {
-            onboarding
-        }
+        Routers.onBoarding
     }
+}
+
+enum Routers: Routable {
+    case onBoarding
+    case authentication
     
-    var onboarding: some View {
-        OnboardingCoordinator()
+    var body: some View {
+        switch self {
+            case .onBoarding:
+                OnboardingCoordinator()
+            case .authentication:
+                AuthenticationCoordinator()
+        }
     }
 }
 

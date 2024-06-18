@@ -1,15 +1,23 @@
 {
-  "originHash" : "af597cfbd57101fe118467f7d61c517d2a9c70d1700fd0751d0e2bd8945fee6a",
   "pins" : [
     {
-      "identity" : "foundationextensions",
+      "identity" : "swift-docc-plugin",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ahmed-yamany/FoundationExtensions",
+      "location" : "https://github.com/apple/swift-docc-plugin",
       "state" : {
         "branch" : "main",
-        "revision" : "227d4e5340febc2e464be4892fd562c26a7c190b"
+        "revision" : "5fc3645728553e2410b578b408db77057e8b1517"
+      }
+    },
+    {
+      "identity" : "swift-docc-symbolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-docc-symbolkit",
+      "state" : {
+        "revision" : "b45d1f2ed151d057b54504d653e0da5552844e34",
+        "version" : "1.0.0"
       }
     }
   ],
-  "version" : 3
+  "version" : 2
 }

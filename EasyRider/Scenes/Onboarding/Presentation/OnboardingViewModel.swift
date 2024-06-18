@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Factory
 
 @MainActor
 protocol OnboardingViewModelProtocol: ObservableObject {
@@ -21,5 +20,4 @@ final class OnboardingViewModel: OnboardingViewModelProtocol {
     init(useCase: OnboardingUseCaseProtocol) {
         self.useCase = useCase
     }
-    
 }

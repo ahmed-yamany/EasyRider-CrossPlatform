@@ -14,6 +14,12 @@
 		EE3CAA232C20FD380005867B /* OnboardingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA222C20FD380005867B /* OnboardingUseCase.swift */; };
 		EE3CAA282C2113910005867B /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA272C2113910005867B /* OnboardingCoordinator.swift */; };
 		EE3CAA2A2C2115660005867B /* ERCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA292C2115660005867B /* ERCoordinator.swift */; };
+		EE3CAA332C211C630005867B /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA322C211C630005867B /* AuthenticationView.swift */; };
+		EE3CAA352C211C7A0005867B /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA342C211C7A0005867B /* AuthenticationViewModel.swift */; };
+		EE3CAA372C211CEE0005867B /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA362C211CEE0005867B /* AuthenticationCoordinator.swift */; };
+		EE3CAA392C211D760005867B /* AuthenticationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA382C211D760005867B /* AuthenticationUseCase.swift */; };
+		EE3CAA3C2C2125F70005867B /* FoundationExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = EE3CAA3B2C2125F70005867B /* FoundationExtensions */; };
+		EE4527F62C220A8700A29089 /* Routing in Frameworks */ = {isa = PBXBuildFile; productRef = EE4527F52C220A8700A29089 /* Routing */; };
 		EE4ABD092C19CFB800F3431D /* EasyRiderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ABD082C19CFB800F3431D /* EasyRiderApp.swift */; };
 		EE4ABD0D2C19CFB900F3431D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD0C2C19CFB900F3431D /* Assets.xcassets */; };
 		EE4ABD112C19CFB900F3431D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD102C19CFB900F3431D /* Preview Assets.xcassets */; };
@@ -27,7 +33,6 @@
 		EE4ABD312C19E0EA00F3431D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD2F2C19E0EA00F3431D /* Localizable.strings */; };
 		EE4ABD352C19E22700F3431D /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ABD342C19E22700F3431D /* Strings+Generated.swift */; };
 		EEAA705B2C1B9A2B00CA564D /* swiftgen+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA705A2C1B9A2B00CA564D /* swiftgen+localized.swift */; };
-		EEAA705E2C1BB15B00CA564D /* FoundationExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = EEAA705D2C1BB15B00CA564D /* FoundationExtensions */; };
 		EEAA70612C1BB6EE00CA564D /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70602C1BB6ED00CA564D /* Fonts+Generated.swift */; };
 		EEAA70662C1BB8AD00CA564D /* Files+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70652C1BB8AD00CA564D /* Files+Generated.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +44,12 @@
 		EE3CAA222C20FD380005867B /* OnboardingUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingUseCase.swift; sourceTree = "<group>"; };
 		EE3CAA272C2113910005867B /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		EE3CAA292C2115660005867B /* ERCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCoordinator.swift; sourceTree = "<group>"; };
+		EE3CAA322C211C630005867B /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		EE3CAA342C211C7A0005867B /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		EE3CAA362C211CEE0005867B /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		EE3CAA382C211D760005867B /* AuthenticationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationUseCase.swift; sourceTree = "<group>"; };
+		EE3CAA3A2C2125E90005867B /* FoundationExtensions */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FoundationExtensions; sourceTree = "<group>"; };
+		EE4527F42C220A6E00A29089 /* Routing */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Routing; sourceTree = "<group>"; };
 		EE4ABD052C19CFB800F3431D /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4ABD082C19CFB800F3431D /* EasyRiderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRiderApp.swift; sourceTree = "<group>"; };
 		EE4ABD0C2C19CFB900F3431D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,8 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEAA705E2C1BB15B00CA564D /* FoundationExtensions in Frameworks */,
+				EE4527F62C220A8700A29089 /* Routing in Frameworks */,
 				EE0A46C52C20FB2B004103BD /* Settings in Frameworks */,
+				EE3CAA3C2C2125F70005867B /* FoundationExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +88,8 @@
 		EE0A46C22C20FB0B004103BD /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				EE4527F42C220A6E00A29089 /* Routing */,
+				EE3CAA3A2C2125E90005867B /* FoundationExtensions */,
 				EE0A46C12C20FB0B004103BD /* Settings */,
 			);
 			path = Packages;
@@ -95,6 +109,33 @@
 			isa = PBXGroup;
 			children = (
 				EE3CAA222C20FD380005867B /* OnboardingUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EE3CAA2F2C211C370005867B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CAA312C211C490005867B /* Domain */,
+				EE3CAA302C211C430005867B /* Presentation */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		EE3CAA302C211C430005867B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CAA322C211C630005867B /* AuthenticationView.swift */,
+				EE3CAA342C211C7A0005867B /* AuthenticationViewModel.swift */,
+				EE3CAA362C211CEE0005867B /* AuthenticationCoordinator.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EE3CAA312C211C490005867B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CAA382C211D760005867B /* AuthenticationUseCase.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -201,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				EEAA70682C1BC7FE00CA564D /* Onboarding */,
+				EE3CAA2F2C211C370005867B /* Authentication */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -258,8 +300,9 @@
 			);
 			name = EasyRider;
 			packageProductDependencies = (
-				EEAA705D2C1BB15B00CA564D /* FoundationExtensions */,
 				EE0A46C42C20FB2B004103BD /* Settings */,
+				EE3CAA3B2C2125F70005867B /* FoundationExtensions */,
+				EE4527F52C220A8700A29089 /* Routing */,
 			);
 			productName = "EasyRider-CrossPlatform";
 			productReference = EE4ABD052C19CFB800F3431D /* EasyRider.app */;
@@ -291,7 +334,6 @@
 			);
 			mainGroup = EE4ABCFC2C19CFB700F3431D;
 			packageReferences = (
-				EEAA705C2C1BB15B00CA564D /* XCRemoteSwiftPackageReference "FoundationExtensions" */,
 			);
 			productRefGroup = EE4ABD062C19CFB800F3431D /* Products */;
 			projectDirPath = "";
@@ -369,13 +411,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3CAA352C211C7A0005867B /* AuthenticationViewModel.swift in Sources */,
 				EE3CAA232C20FD380005867B /* OnboardingUseCase.swift in Sources */,
 				EEAA70662C1BB8AD00CA564D /* Files+Generated.swift in Sources */,
 				EEAA70612C1BB6EE00CA564D /* Fonts+Generated.swift in Sources */,
 				EE3CAA2A2C2115660005867B /* ERCoordinator.swift in Sources */,
 				EE3CAA1F2C20FD320005867B /* OnboardingViewModel.swift in Sources */,
 				EE4ABD352C19E22700F3431D /* Strings+Generated.swift in Sources */,
+				EE3CAA372C211CEE0005867B /* AuthenticationCoordinator.swift in Sources */,
 				EEAA705B2C1B9A2B00CA564D /* swiftgen+localized.swift in Sources */,
+				EE3CAA392C211D760005867B /* AuthenticationUseCase.swift in Sources */,
+				EE3CAA332C211C630005867B /* AuthenticationView.swift in Sources */,
 				EE4ABD092C19CFB800F3431D /* EasyRiderApp.swift in Sources */,
 				EE3CAA1E2C20FD320005867B /* OnboardingView.swift in Sources */,
 				EE3CAA282C2113910005867B /* OnboardingCoordinator.swift in Sources */,
@@ -541,7 +587,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -580,7 +626,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -618,26 +664,18 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		EEAA705C2C1BB15B00CA564D /* XCRemoteSwiftPackageReference "FoundationExtensions" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ahmed-yamany/FoundationExtensions";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
 		EE0A46C42C20FB2B004103BD /* Settings */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Settings;
 		};
-		EEAA705D2C1BB15B00CA564D /* FoundationExtensions */ = {
+		EE3CAA3B2C2125F70005867B /* FoundationExtensions */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EEAA705C2C1BB15B00CA564D /* XCRemoteSwiftPackageReference "FoundationExtensions" */;
 			productName = FoundationExtensions;
+		};
+		EE4527F52C220A8700A29089 /* Routing */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Routing;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

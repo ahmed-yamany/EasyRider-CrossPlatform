@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import Routing
 
-struct OnboardingCoordinator: View {
+protocol OnboardingCoordinatorProtocol {
+    func navigateToAuthentication()
+}
+
+struct OnboardingCoordinator: View, OnboardingCoordinatorProtocol {
     @StateObject var viewModel: OnboardingViewModel
+    @EnvironmentObject private var router: Router<Routers>
     
     init() {
         let useCase = OnboardingUseCase()
@@ -18,5 +24,9 @@ struct OnboardingCoordinator: View {
     
     var body: some View {
         OnboardingView(coordinator: self, viewModel: viewModel)
+    }
+    
+    func navigateToAuthentication() {
+        router.navigate(to: .authentication)
     }
 }

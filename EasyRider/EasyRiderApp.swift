@@ -7,15 +7,21 @@
 
 import SwiftUI
 import Settings
+import Routing
 
 @main
 struct EasyRider_CrossPlatformApp: App {
-    var settings = Settings.shared
-    
+    @ObservedObject var settings = Settings.shared
+    @StateObject var router: Router<Routers> = Router()
+
     var body: some Scene {
         WindowGroup {
-            ERCoordinator()
-                .environmentSettings(settings)
+            RoutingView(stack: $router.stack) {
+                ERCoordinator()
+            }
+            .foregroundStyle(.erContentPrimary)
+            .environmentSettings(settings)
+            .environmentObject(router)
         }
     }
 }
