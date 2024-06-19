@@ -6,27 +6,20 @@
 //
 
 import SwiftUI
-import Routing
+import Coordinator
 
-struct ERCoordinator: View {
-    @EnvironmentObject private var router: Router<Routers>
+struct ERCoordinator: UIHostingCoordinator {
+    @StateObject var router: UIHostingRouter = .init()
     
     var body: some View {
-        Routers.onBoarding
+        NavigationControllerView(router: router)
+            .onAppear {
+                start()
+            }
     }
-}
-
-enum Routers: Routable {
-    case onBoarding
-    case authentication
     
-    var body: some View {
-        switch self {
-            case .onBoarding:
-                OnboardingCoordinator()
-            case .authentication:
-                AuthenticationCoordinator()
-        }
+    func start() {
+        OnboardingCoordinator(router: router).start()
     }
 }
 

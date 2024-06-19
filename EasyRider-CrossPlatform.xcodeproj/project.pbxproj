@@ -19,7 +19,6 @@
 		EE3CAA372C211CEE0005867B /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA362C211CEE0005867B /* AuthenticationCoordinator.swift */; };
 		EE3CAA392C211D760005867B /* AuthenticationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CAA382C211D760005867B /* AuthenticationUseCase.swift */; };
 		EE3CAA3C2C2125F70005867B /* FoundationExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = EE3CAA3B2C2125F70005867B /* FoundationExtensions */; };
-		EE4527F62C220A8700A29089 /* Routing in Frameworks */ = {isa = PBXBuildFile; productRef = EE4527F52C220A8700A29089 /* Routing */; };
 		EE4ABD092C19CFB800F3431D /* EasyRiderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ABD082C19CFB800F3431D /* EasyRiderApp.swift */; };
 		EE4ABD0D2C19CFB900F3431D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD0C2C19CFB900F3431D /* Assets.xcassets */; };
 		EE4ABD112C19CFB900F3431D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD102C19CFB900F3431D /* Preview Assets.xcassets */; };
@@ -32,6 +31,7 @@
 		EE4ABD2C2C19E08E00F3431D /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD2A2C19E08E00F3431D /* swiftgen.yml */; };
 		EE4ABD312C19E0EA00F3431D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD2F2C19E0EA00F3431D /* Localizable.strings */; };
 		EE4ABD352C19E22700F3431D /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ABD342C19E22700F3431D /* Strings+Generated.swift */; };
+		EE794E9F2C223AE000778781 /* Coordinator in Frameworks */ = {isa = PBXBuildFile; productRef = EE794E9E2C223AE000778781 /* Coordinator */; };
 		EEAA705B2C1B9A2B00CA564D /* swiftgen+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA705A2C1B9A2B00CA564D /* swiftgen+localized.swift */; };
 		EEAA70612C1BB6EE00CA564D /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70602C1BB6ED00CA564D /* Fonts+Generated.swift */; };
 		EEAA70662C1BB8AD00CA564D /* Files+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70652C1BB8AD00CA564D /* Files+Generated.swift */; };
@@ -49,7 +49,6 @@
 		EE3CAA362C211CEE0005867B /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
 		EE3CAA382C211D760005867B /* AuthenticationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationUseCase.swift; sourceTree = "<group>"; };
 		EE3CAA3A2C2125E90005867B /* FoundationExtensions */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FoundationExtensions; sourceTree = "<group>"; };
-		EE4527F42C220A6E00A29089 /* Routing */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Routing; sourceTree = "<group>"; };
 		EE4ABD052C19CFB800F3431D /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4ABD082C19CFB800F3431D /* EasyRiderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRiderApp.swift; sourceTree = "<group>"; };
 		EE4ABD0C2C19CFB900F3431D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		EE4ABD2A2C19E08E00F3431D /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		EE4ABD302C19E0EA00F3431D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EE4ABD342C19E22700F3431D /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		EE794E9D2C223ACD00778781 /* Coordinator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Coordinator; sourceTree = "<group>"; };
 		EEAA705A2C1B9A2B00CA564D /* swiftgen+localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swiftgen+localized.swift"; sourceTree = "<group>"; };
 		EEAA70602C1BB6ED00CA564D /* Fonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
 		EEAA70652C1BB8AD00CA564D /* Files+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Files+Generated.swift"; sourceTree = "<group>"; };
@@ -76,9 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE4527F62C220A8700A29089 /* Routing in Frameworks */,
 				EE0A46C52C20FB2B004103BD /* Settings in Frameworks */,
 				EE3CAA3C2C2125F70005867B /* FoundationExtensions in Frameworks */,
+				EE794E9F2C223AE000778781 /* Coordinator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 		EE0A46C22C20FB0B004103BD /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				EE4527F42C220A6E00A29089 /* Routing */,
+				EE794E9D2C223ACD00778781 /* Coordinator */,
 				EE3CAA3A2C2125E90005867B /* FoundationExtensions */,
 				EE0A46C12C20FB0B004103BD /* Settings */,
 			);
@@ -302,7 +302,7 @@
 			packageProductDependencies = (
 				EE0A46C42C20FB2B004103BD /* Settings */,
 				EE3CAA3B2C2125F70005867B /* FoundationExtensions */,
-				EE4527F52C220A8700A29089 /* Routing */,
+				EE794E9E2C223AE000778781 /* Coordinator */,
 			);
 			productName = "EasyRider-CrossPlatform";
 			productReference = EE4ABD052C19CFB800F3431D /* EasyRider.app */;
@@ -673,9 +673,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = FoundationExtensions;
 		};
-		EE4527F52C220A8700A29089 /* Routing */ = {
+		EE794E9E2C223AE000778781 /* Coordinator */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Routing;
+			productName = Coordinator;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

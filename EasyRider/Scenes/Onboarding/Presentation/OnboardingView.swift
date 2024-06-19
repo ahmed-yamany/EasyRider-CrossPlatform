@@ -10,7 +10,7 @@ import SwiftUI
 struct OnboardingView<ViewModel: OnboardingViewModelProtocol, Coordinator: OnboardingCoordinatorProtocol>: View {
     let coordinator: Coordinator
     @ObservedObject var viewModel: ViewModel
-    
+        
     var body: some View {
         VStack {
             onBoardingView
@@ -22,6 +22,7 @@ struct OnboardingView<ViewModel: OnboardingViewModelProtocol, Coordinator: Onboa
                 skipButton
             }
         }
+    
 //        .animation(.easeIn(duration: 0.3), value: viewModel.currentStep)
     }
     
@@ -110,8 +111,8 @@ struct OnBoardingProgressBar: View {
     }
 }
 
-#Preview {
-    NavigationStack {
-        OnboardingCoordinator()
-    }
-}
+//#Preview {
+//    NavigationStack {
+//        OnboardingCoordinator()
+//    }
+//}

@@ -6,26 +6,32 @@
 //
 
 import SwiftUI
+import Coordinator
 
-protocol AuthenticationCoordinatorProtocol {
+protocol AuthenticationCoordinatorProtocol: UIHostingCoordinator {
     
 }
 
-struct AuthenticationCoordinator: View, AuthenticationCoordinatorProtocol {
-    @StateObject var viewModel: AuthenticationViewModel
+struct AuthenticationCoordinator: AuthenticationCoordinatorProtocol {
+    @StateObject private var viewModel: AuthenticationViewModel
+    @ObservedObject var router: UIHostingRouter
     
-    init() {
+    init(router: UIHostingRouter) {
         let useCase = AuthenticationUseCase()
         let viewModel = AuthenticationViewModel(useCase: useCase)
         self._viewModel = StateObject(wrappedValue: viewModel)
+        self._router = ObservedObject(wrappedValue: router)
     }
     
     var body: some View {
         AuthenticationView(coordinator: self, viewModel: viewModel)
-            .presentationDetents([.height(100)])
+    }
+    
+    func start() {
+        router.push(self)
     }
 }
 
 #Preview {
-    AuthenticationCoordinator()
+    AuthenticationCoordinator(router: .init())
 }
