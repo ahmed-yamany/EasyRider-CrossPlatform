@@ -1,0 +1,40 @@
+{
+  "images" : [
+    {
+      "filename" : "onboarding3.png",
+      "idiom" : "universal",
+      "language-direction" : "left-to-right"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "onboarding3 2.png",
+      "idiom" : "universal",
+      "language-direction" : "left-to-right"
+    },
+    {
+      "filename" : "onboarding3 1.png",
+      "idiom" : "universal",
+      "language-direction" : "right-to-left"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "onboarding3 3.png",
+      "idiom" : "universal",
+      "language-direction" : "right-to-left"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -31,6 +31,7 @@
 		EE4ABD2C2C19E08E00F3431D /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD2A2C19E08E00F3431D /* swiftgen.yml */; };
 		EE4ABD312C19E0EA00F3431D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE4ABD2F2C19E0EA00F3431D /* Localizable.strings */; };
 		EE4ABD352C19E22700F3431D /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ABD342C19E22700F3431D /* Strings+Generated.swift */; };
+		EE6597F12C23BC4E001EFE02 /* OnboardingTabviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6597F02C23BC4E001EFE02 /* OnboardingTabviewModel.swift */; };
 		EE794E9F2C223AE000778781 /* Coordinator in Frameworks */ = {isa = PBXBuildFile; productRef = EE794E9E2C223AE000778781 /* Coordinator */; };
 		EEAA705B2C1B9A2B00CA564D /* swiftgen+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA705A2C1B9A2B00CA564D /* swiftgen+localized.swift */; };
 		EEAA70612C1BB6EE00CA564D /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA70602C1BB6ED00CA564D /* Fonts+Generated.swift */; };
@@ -64,6 +65,7 @@
 		EE4ABD2A2C19E08E00F3431D /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		EE4ABD302C19E0EA00F3431D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EE4ABD342C19E22700F3431D /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		EE6597F02C23BC4E001EFE02 /* OnboardingTabviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTabviewModel.swift; sourceTree = "<group>"; };
 		EE794E9D2C223ACD00778781 /* Coordinator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Coordinator; sourceTree = "<group>"; };
 		EEAA705A2C1B9A2B00CA564D /* swiftgen+localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swiftgen+localized.swift"; sourceTree = "<group>"; };
 		EEAA70602C1BB6ED00CA564D /* Fonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		EE3CAA192C20FD2A0005867B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				EE6597EF2C23BC28001EFE02 /* Entity */,
 				EE3CAA222C20FD380005867B /* OnboardingUseCase.swift */,
 			);
 			path = Domain;
@@ -236,6 +239,14 @@
 				EE4ABD342C19E22700F3431D /* Strings+Generated.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		EE6597EF2C23BC28001EFE02 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EE6597F02C23BC4E001EFE02 /* OnboardingTabviewModel.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		EEAA70522C1B94A500CA564D /* Scenes */ = {
@@ -425,6 +436,7 @@
 				EE4ABD092C19CFB800F3431D /* EasyRiderApp.swift in Sources */,
 				EE3CAA1E2C20FD320005867B /* OnboardingView.swift in Sources */,
 				EE3CAA282C2113910005867B /* OnboardingCoordinator.swift in Sources */,
+				EE6597F12C23BC4E001EFE02 /* OnboardingTabviewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,7 +599,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -595,7 +607,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yamany.EasyRider-CrossPlatform";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -626,7 +639,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -634,7 +647,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yamany.EasyRider-CrossPlatform";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -15,20 +15,10 @@ struct AuthenticationView<ViewModel: AuthenticationViewModelProtocol, Coordinato
     var body: some View {
         ScrollView {
             VStack {
-                ForEach(0..<1000, id: \.self) { index in
-                    Text("\(index) test")
-                        .frame(height: 20)
-                        .background(.blue)
-                        .onTapGesture {
-//                            coordinator.router.selectedDetent(.medium)
-                            coordinator.router.sheetCornerRadius(50, animated: true)
-                            
-                        }
-                }
+
             }
             .background(.erBackground)
         }
-        .padding(.top, 60)
         .background(.red)
     }
 }
