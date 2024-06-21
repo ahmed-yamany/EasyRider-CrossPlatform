@@ -24,3 +24,11 @@ files:
   outputs:
     templateName: structured-swift5
     output: Files+Generated.swift
+
+xcassets:
+  inputs:
+    - Assets/Assets.xcassets
+    - Assets/Colors.xcassets
+  outputs:
+    - templateName: swift5
+      output: Assets+Generated.swift

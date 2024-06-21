@@ -7,15 +7,18 @@
 
 import SwiftUI
 import Settings
+import Coordinator
 
 @main
 struct EasyRider_CrossPlatformApp: App {
     @ObservedObject var settings = Settings.shared
-
+    
     var body: some Scene {
         WindowGroup {
-            ERCoordinator()
-                .environmentSettings(settings)
+            GeometryReader { proxy in
+                ERCoordinator()
+                    .environmentSettings(settings, proxy: proxy)               
+            }
         }
     }
 }

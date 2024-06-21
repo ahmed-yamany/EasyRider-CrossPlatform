@@ -9,6 +9,8 @@ import SwiftUI
 
 public protocol SettingsProtocol: ObservableObject {
     var language: Language { get set }
+    var screenWidth: CGSize { get set }
+    var safeAreaInsets: EdgeInsets { get set }
 }
 
 public class Settings: SettingsProtocol {
@@ -25,4 +27,7 @@ public class Settings: SettingsProtocol {
             useCase.updateLanguage(with: language)
         }
     }
+    
+    @Published public var screenWidth: CGSize = .zero
+    @Published public var safeAreaInsets: EdgeInsets = .init()
 }

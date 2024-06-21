@@ -33,7 +33,7 @@ struct OnboardingView<ViewModel: OnboardingViewModelProtocol, Coordinator: Onboa
             coordinator.navigateToAuthentication()
         } label: {
             Text(L10n.skip)
-                .foregroundStyle(.erContentPrimary)
+                .foregroundStyle(Asset.Colors.erContentPrimary.swiftUIColor)
                 .font(FontFamily.Poppins.regular.swiftUIFont(size: 16))
         }
         .frame(maxWidth: .infinity, alignment: .trailing)
@@ -60,7 +60,7 @@ struct OnboardingView<ViewModel: OnboardingViewModelProtocol, Coordinator: Onboa
                             .font(FontFamily.Poppins.regular.swiftUIFont(size: 14))
                             .padding(.horizontal, 30)
                     }
-                    .foregroundStyle(.erContentPrimary)
+                    .foregroundStyle(Asset.Colors.erContentPrimary.swiftUIColor)
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.horizontal, 14)
@@ -73,7 +73,7 @@ struct OnboardingView<ViewModel: OnboardingViewModelProtocol, Coordinator: Onboa
     var progressButton: some View {
         ZStack {
             OnBoardingProgressBar(value: viewModel.progressBarValue)
-                .foregroundStyle(.erPrimary)
+                .foregroundStyle(Asset.Colors.erPrimary.swiftUIColor)
                 .frame(width: 80, height: 80)
             
             Button {
@@ -84,8 +84,8 @@ struct OnboardingView<ViewModel: OnboardingViewModelProtocol, Coordinator: Onboa
                 Image(systemName: "arrow.right")
                     .font(.system(size: 18).bold())
                     .frame(width: 65, height: 65)
-                    .background(.erPrimary)
-                    .foregroundStyle(.erContentPrimary)
+                    .background(Asset.Colors.erPrimary.swiftUIColor)
+                    .foregroundStyle(Asset.Colors.erContentPrimary.swiftUIColor)
                     .clipShape(Circle())
             }
         }
@@ -101,7 +101,7 @@ struct OnBoardingProgressBar: View {
         Circle()
             .stroke(lineWidth: 5.0)
             .opacity(0.3)
-            .foregroundStyle(.erContentDisabled)
+            .foregroundStyle(Asset.Colors.erContentDisabled.swiftUIColor)
         
         Circle()
             .trim(from: 0, to: CGFloat(value))

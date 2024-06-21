@@ -24,5 +24,5 @@ struct ERCoordinator: UIHostingCoordinator {
 }
 
 #Preview {
-    ERCoordinator()
+    ERCoordinator(router: .init())
 }
